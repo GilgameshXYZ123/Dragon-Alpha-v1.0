@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuda_reduce.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="field_linear.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_max.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_max_indexed.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_min.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_min_indexed.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_quadratic.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_quadratic_dual.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_linear.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_max.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_max_indexed.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_min.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_min_indexed.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_quadratic.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_quadratic_dual.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_softmax.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_softmax_crossEntropy_stage1.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="straight_linear.cuh">
+      <Filter>straight_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="straight_max.cuh">
+      <Filter>straight_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="straight_max_indexed.cuh">
+      <Filter>straight_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="straight_min.cuh">
+      <Filter>straight_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="straight_min_indexed.cuh">
+      <Filter>straight_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="straight_quadratic.cuh">
+      <Filter>straight_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_linear_dual.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_linear_dual.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_linear_quadratic.cuh">
+      <Filter>field_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_linear_quadratic.cuh">
+      <Filter>row_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_layernorm_deltaA_v2.cuh">
+      <Filter>extra_layernorm_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_layernorm_deltaAB_v2.cuh">
+      <Filter>extra_layernorm_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_layernorm_deltaXp_v1.cuh">
+      <Filter>extra_layernorm_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_layernorm_deltaXp_v1_affined.cuh">
+      <Filter>extra_layernorm_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_layernorm_deltaXp_v2.cuh">
+      <Filter>extra_layernorm_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="row_layernorm_deltaXp_v2_affined.cuh">
+      <Filter>extra_layernorm_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="gradient_v1_f64.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="gradient_v2_f64.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="field_batchnorm_gradients_v2_affined.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="field_affine_deltaA_v1.cuh">
+      <Filter>extra_affine_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_affine_deltaAB_v1.cuh">
+      <Filter>extra_affine_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="R_field.cuh" />
+    <ClInclude Include="R_row.cuh" />
+    <ClInclude Include="R_straight.cuh" />
+    <ClInclude Include="field_batchnorm_gradients_v1_affined.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="field_batchnorm_deltaXp_v1_affined.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="field_batchnorm_deltaXp_v1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="field_batchnorm_deltaXp_v2.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="field_sqBatchNorm_deltaA_v2.cuh">
+      <Filter>extra_affine_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_sqBatchNorm_deltaAB_v2.cuh">
+      <Filter>extra_affine_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_batchNorm_deltaAB_v2.cuh">
+      <Filter>extra_affine_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_batchNorm_deltaA_v2.cuh">
+      <Filter>extra_affine_reduce</Filter>
+    </ClInclude>
+    <ClInclude Include="field_affine_deltaAB_v2.cuh">
+      <Filter>extra_affine_reduce</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="row_reduce">
+      <UniqueIdentifier>{6fc1ba49-21a0-403d-b229-57e6fa4a4940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="straight_reduce">
+      <UniqueIdentifier>{f70aeebd-10b6-4b3a-b5d8-ec87d9f14d2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra_layernorm_reduce">
+      <UniqueIdentifier>{eee3486b-ea3a-496d-a24c-c7ad6a3d4d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xeno">
+      <UniqueIdentifier>{4775e570-8190-4444-8f71-eafc6478d27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="field_reduce">
+      <UniqueIdentifier>{2ef32634-ed14-4229-ab82-ddfe0a23a2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra_affine_reduce">
+      <UniqueIdentifier>{be440d52-65ab-40fb-b384-8a87aaeaebaf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
