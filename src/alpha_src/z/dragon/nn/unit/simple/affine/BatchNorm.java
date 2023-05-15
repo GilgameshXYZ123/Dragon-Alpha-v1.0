@@ -29,21 +29,6 @@ public class BatchNorm extends GlobalBatchNorm
                 feature_dim);
     }
 
-    public void setAffine(boolean affine) {
-        this.affine = affine;
-    }
-
-    public void setBeta1(float beta1) {
-        this.beta1 = beta1;
-    }
-
-    public void setEps(float eps) {
-        this.eps = eps;
-    }
-
-    
-    
-    
     //<editor-fold defaultstate="collapsed" desc="Basic-Functions">
     public Tensor mean() { return dX_mean; }
     public Tensor var() { return dX_var; }
