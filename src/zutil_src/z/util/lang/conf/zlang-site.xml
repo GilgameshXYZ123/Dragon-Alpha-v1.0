@@ -1,0 +1,4 @@
+<configuration>
+    <property name="lang.toString.init" type="boolean" value="true"/>
+    <property name="lang.print.init" type="boolean" value="true"/>
+</configuration>
