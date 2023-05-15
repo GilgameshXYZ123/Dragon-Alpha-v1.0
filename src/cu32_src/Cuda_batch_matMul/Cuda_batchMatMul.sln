@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1758
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cuda_batchMatMul", "Cuda_batchMatMul\Cuda_batchMatMul.vcxproj", "{3B580969-D0B1-40E6-BB4E-B71DF21DDD9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B580969-D0B1-40E6-BB4E-B71DF21DDD9F}.Debug|x64.ActiveCfg = Debug|x64
+		{3B580969-D0B1-40E6-BB4E-B71DF21DDD9F}.Debug|x64.Build.0 = Debug|x64
+		{3B580969-D0B1-40E6-BB4E-B71DF21DDD9F}.Release|x64.ActiveCfg = Release|x64
+		{3B580969-D0B1-40E6-BB4E-B71DF21DDD9F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {200A1E7E-E959-4F1B-825B-66CA4FEA0AE9}
+	EndGlobalSection
+EndGlobal

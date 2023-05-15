@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuda_batchMatMul.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="texture.cuh" />
+    <ClInclude Include="batchMatMul.cuh">
+      <Filter>batchMatMul</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMul_kernel.cuh">
+      <Filter>batchMatMul</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMul_kernel_padding.cuh">
+      <Filter>batchMatMul</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMulT1.cuh">
+      <Filter>batchMatMulT1</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMulT1_kernel.cuh">
+      <Filter>batchMatMulT1</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMulT1_kernel_padding.cuh">
+      <Filter>batchMatMulT1</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMulT2.cuh">
+      <Filter>batchMatMulT2</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMulT2_kernel.cuh">
+      <Filter>batchMatMulT2</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMulT2_kernel_padding.cuh">
+      <Filter>batchMatMulT2</Filter>
+    </ClInclude>
+    <ClInclude Include="UBmat.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMul_uernel.cuh">
+      <Filter>batchMatMul</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="batchMatMulT2_uernel.cuh">
+      <Filter>batchMatMulT2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="batchMatMul">
+      <UniqueIdentifier>{00bf5b25-5d4d-402d-9c9a-069e10bf4dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="batchMatMulT1">
+      <UniqueIdentifier>{cbd9a592-68eb-4b82-bfaa-105902ec4a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="batchMatMulT2">
+      <UniqueIdentifier>{5dd52b08-e8fb-48a7-8e27-a201be2fb04a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xeno">
+      <UniqueIdentifier>{ff3fb06e-33c1-4513-bc36-7bfb011fe4b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
