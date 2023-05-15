@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuda_dconv3D_deltaX.cuh" />
+    <ClInclude Include="dconv3D_dX.cuh" />
+    <ClInclude Include="texture.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="U_dcon3D_crossAdd_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3D_dX_kernelSplit_Ims2_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3D_dX_kernelSplit_Ims2_kernel_EX.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3D_dX_kernelSplit_Ims2_kernel_texture.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3D_dX_KernelSplit_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_Ims2_R.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_kernelSplit_Ims_oriX.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_kernelsplit_X1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_kernelsplit_X2.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_zeroPadding_kernel_s1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3D_dX_kernelSplit_Ims2R_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3D_dX_kernelSplit_Ims2R_kernel_EX.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3D_dX_kernelSplit_Ims2R_kernel_texture.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X2.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_s1_W3.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Old_dconv3D_dX_kernelSplit_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Old_dconv3D_dX_kernelSplit_kernel_texture.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Udconv3D_dX_kernelSplit_Ims2R_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X3.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X4.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X5.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uold_dconv3D_dX_ZeroPadding_kernel_s2pow.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uold_dconv3D_dX_ZeroPadding_kernel_suv.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uold_dconv3D_dX_ZeroPadding_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_CrossAdd_kernel.cuh">
+      <Filter>CrossAdd</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPadding_kernel_s1.cuh">
+      <Filter>ZeroPadding</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_remode.cuh">
+      <Filter>KernelSplit</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_remode_v2.cuh">
+      <Filter>KernelSplit</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_R_kernel.cuh">
+      <Filter>KernelSplit</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_R_kernel_EX.cuh">
+      <Filter>KernelSplit</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_ImsR_kernel.cuh">
+      <Filter>KernelSplit_ImsR</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_ImsR_kernel_EX.cuh">
+      <Filter>KernelSplit_ImsR</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_ImsR_kernel_texture.cuh">
+      <Filter>KernelSplit_ImsR</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernel_W1.cuh">
+      <Filter>ZeroPadding</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X6.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPaddingV2_kernel_s1.cuh">
+      <Filter>ZeroPaddingV2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPaddingV2_kernel_s1_EX.cuh">
+      <Filter>ZeroPaddingV2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPaddingV2_kernel_s1_EX2.cuh">
+      <Filter>ZeroPaddingV2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_Ims2R_kernel.cuh">
+      <Filter>KernelSplit_Ims2R</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_Ims2R_kernel_EX.cuh">
+      <Filter>KernelSplit_Ims2R</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_Ims2R_kernel_texture.cuh">
+      <Filter>KernelSplit_Ims2R</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X7.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X8.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPadding_kernel_A_s1_texture.cuh">
+      <Filter>ZeroPadding</Filter>
+    </ClInclude>
+    <ClInclude Include="OLD_W2pow_s1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_Ims2R_A_kernel.cuh">
+      <Filter>KernelSplit_Ims2R</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPaddingV2_uernel_s1.cuh">
+      <Filter>ZeroPaddingV2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPadding_kernel_s1_EX.cuh">
+      <Filter>ZeroPadding</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X9.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPadding_kernel_A_s1.cuh">
+      <Filter>ZeroPadding</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPadding_kernel_s1_texture.cuh">
+      <Filter>ZeroPadding</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_ZeroPadding_uernel_s1.cuh">
+      <Filter>ZeroPadding</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplitV2_Ims2R_kernel.cuh">
+      <Filter>KernelSplit_Ims2R_V2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplitV2_Ims2R_kernel_EX.cuh">
+      <Filter>KernelSplit_Ims2R_V2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplitV2_Ims2R_uernel.cuh">
+      <Filter>KernelSplit_Ims2R_V2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dX_kernelSplit_Ims2R_uernel.cuh">
+      <Filter>KernelSplit_Ims2R</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Xeno">
+      <UniqueIdentifier>{7cedc42f-8590-4d1f-9b7b-a3597a498dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CrossAdd">
+      <UniqueIdentifier>{1dbb6dde-ff9a-4942-91ba-58160a761049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZeroPadding">
+      <UniqueIdentifier>{ee7f0226-11cc-4b61-8ad2-d8e0349d3024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KernelSplit">
+      <UniqueIdentifier>{dca1bb40-07cc-4762-9506-fa824c31beea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KernelSplit_ImsR">
+      <UniqueIdentifier>{82918293-8700-47c4-81f0-b2f87de8589e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZeroPaddingV2">
+      <UniqueIdentifier>{d74caa4a-054a-49bc-9f24-c22c166f3feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KernelSplit_Ims2R">
+      <UniqueIdentifier>{536ac37d-6a16-46aa-9550-57b847a2640d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KernelSplit_Ims2R_V2">
+      <UniqueIdentifier>{dc8a0564-71cd-470f-90ad-eff05c0ee8b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
