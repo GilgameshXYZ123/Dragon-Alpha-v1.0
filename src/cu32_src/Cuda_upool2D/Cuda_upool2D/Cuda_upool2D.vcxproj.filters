@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuda_upool2D.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="upool2D.cuh" />
+    <ClInclude Include="upool2D_avg_ip_kernel.cuh">
+      <Filter>upool_avg</Filter>
+    </ClInclude>
+    <ClInclude Include="upool2D_avg_ip_kernel_tiled.cuh">
+      <Filter>upool_avg</Filter>
+    </ClInclude>
+    <ClInclude Include="upool2D_avg_kernel.cuh">
+      <Filter>upool_avg</Filter>
+    </ClInclude>
+    <ClInclude Include="upool2D_avg_kernel_tiled.cuh">
+      <Filter>upool_avg</Filter>
+    </ClInclude>
+    <ClInclude Include="upool2d_max_indexed_kernel.cuh">
+      <Filter>upool_max</Filter>
+    </ClInclude>
+    <ClInclude Include="upool2D_max_kernel.cuh">
+      <Filter>upool_max</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="upool_avg">
+      <UniqueIdentifier>{647f059b-21e9-4ac4-b560-95ee5831345f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="upool_max">
+      <UniqueIdentifier>{c17ad2a5-de77-43e4-bfa6-dad5194d32a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
