@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Cuda_deconv3D_deltaW.cuh" />
+    <ClInclude Include="dconv3d_dW.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="texture.cuh" />
+    <ClInclude Include="U_no_padding.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_BGemmTest.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_Ori_BGEMM_k88.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3d_dW_BGemm_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3d_dW_BGemm_kernel_texture.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Udconv3d_dW_Gemm_kernel_texture.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_dconv3d_dW_Gemm_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X2.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uold_dconv3d_dW_BGemm_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uold_dconv3d_dW_BGemm_kernel_EX.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uold_dconv3d_dW_BGemm_bufSum.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uold_dconv3d_dW_BGemm_kernel_W1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X3.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_Gemm_kernel.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_Gemm_kernel_EX.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_Gemm_kernel_W1.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_bufSum.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_kernel.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_kernel_EX.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_kernel_W1.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_bufSum_EX.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmV2SK_kernel.cuh">
+      <Filter>GemmV2SK</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X6.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmV2SK_kernel_EX.cuh">
+      <Filter>GemmV2SK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmV2SK_kernel_EX2.cuh">
+      <Filter>GemmV2SK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_kernel_EX2.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_Gemm_kernel_EX2.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmV2_kernel.cuh">
+      <Filter>GemmV2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmV2_kernel_EX.cuh">
+      <Filter>GemmV2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmV2_kernel_EX2.cuh">
+      <Filter>GemmV2</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_sernel.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_sernel_W1.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmV2SK_sernel.cuh">
+      <Filter>GemmV2SK</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X7.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dW_FFT.cuh">
+      <Filter>FFT</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3D_dW_FFT_s1.cuh">
+      <Filter>FFT</Filter>
+    </ClInclude>
+    <ClInclude Include="complex.cuh">
+      <Filter>FFT</Filter>
+    </ClInclude>
+    <ClInclude Include="dconv3d_dW_GemmSK_uernel.cuh">
+      <Filter>GemmSK</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X5.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X4.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Xeno">
+      <UniqueIdentifier>{1107aa25-e189-4b62-a067-0b368625676d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gemm">
+      <UniqueIdentifier>{93c33341-1fb3-42e4-84e7-f7ee0ce5ff92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GemmSK">
+      <UniqueIdentifier>{70ed677f-4cbf-4b77-a71f-ca683c372336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GemmV2SK">
+      <UniqueIdentifier>{062983c6-1e80-4972-a15d-95ea33be30f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GemmV2">
+      <UniqueIdentifier>{ed457d9e-ef14-425e-827b-c41dc63bb63b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FFT">
+      <UniqueIdentifier>{d353765a-275b-435b-8d0a-fbe8446c9247}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+</Project>
