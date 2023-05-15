@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuda_matMul.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="matMul.cuh">
+      <Filter>matMul</Filter>
+    </ClInclude>
+    <ClInclude Include="matMul_kernel.cuh">
+      <Filter>matMul</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT1.cuh">
+      <Filter>matMulT1</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT1_kernel.cuh">
+      <Filter>matMulT1</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT1SK_kernel.cuh">
+      <Filter>matMulT1</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT2.cuh">
+      <Filter>matMulT2</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT2_kernel.cuh">
+      <Filter>matMulT2</Filter>
+    </ClInclude>
+    <ClInclude Include="SKbufsum.cuh" />
+    <ClInclude Include="Memory.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="matMul_kernel_k2pow.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT2_kernel_k2pow.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT1_kernel_mgk.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="matMul_uernel.cuh">
+      <Filter>matMul</Filter>
+    </ClInclude>
+    <ClInclude Include="matMul_sernel.cuh">
+      <Filter>matMul</Filter>
+    </ClInclude>
+    <ClInclude Include="matMulT2_uernel.cuh">
+      <Filter>matMulT2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="matMul">
+      <UniqueIdentifier>{94faf86d-54a9-40cf-8e85-9d28c6b9f1f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="matMulT1">
+      <UniqueIdentifier>{613739aa-69e7-4d9b-95a1-ec60e7853b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="matMulT2">
+      <UniqueIdentifier>{8f4efc6a-c8af-41da-bc58-71fbb77e4b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xeno">
+      <UniqueIdentifier>{9778b068-8cb4-47c6-b5d9-1cb6f71ad253}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
