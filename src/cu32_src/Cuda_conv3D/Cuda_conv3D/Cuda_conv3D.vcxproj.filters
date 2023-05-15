@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+    <CudaCompile Include="vernel.cu">
+      <Filter>Xeno</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="conv3D.cuh" />
+    <ClInclude Include="texture.cuh" />
+    <ClInclude Include="Cuda_conv3D.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="U_texture_gemm.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uconv3D_direct_kernel.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="Uconv3D_kernel_V2.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X1.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X2.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X3.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X4.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X5.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_kernel.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_kernel_EX.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_kernel_EX2.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_kernel_no_padding.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_kernel_no_padding_EX.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_kernel_texture.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_kernel_texture2.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_kernel.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_kernel_EX.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_kernel_EX2.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_kernel_texture.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_kernel_texture2.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_kernel_W1.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmV2R_kernel.cuh">
+      <Filter>GemmV2</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmV2R_kernel_EX.cuh">
+      <Filter>GemmV2</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmV2_kernel.cuh">
+      <Filter>GemmV2</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_kernel_W1.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_A_kernel.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory2.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_A_kernel_texture.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X6.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmR_uernel.cuh">
+      <Filter>GemmR</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_GemmV2R_uernel.cuh">
+      <Filter>GemmV2</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X7.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_Gemm_sernel.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_sernel_W1.cuh">
+      <Filter>Gemm</Filter>
+    </ClInclude>
+    <ClInclude Include="Winograd_X2.cuh">
+      <Filter>Winograd</Filter>
+    </ClInclude>
+    <ClInclude Include="Winograd_X1.cuh">
+      <Filter>Winograd</Filter>
+    </ClInclude>
+    <ClInclude Include="Winograd_X3.cuh">
+      <Filter>Winograd</Filter>
+    </ClInclude>
+    <ClInclude Include="Winograd_X4.cuh">
+      <Filter>Winograd</Filter>
+    </ClInclude>
+    <ClInclude Include="WinoGrad_X5.cuh">
+      <Filter>Winograd</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_kernel_remode.cuh">
+      <Filter>Remode</Filter>
+    </ClInclude>
+    <ClInclude Include="conv3D_kernel_remode_V2.cuh">
+      <Filter>Remode</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X8.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+    <ClInclude Include="U_X9.cuh">
+      <Filter>Xeno</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Xeno">
+      <UniqueIdentifier>{b5ce0097-42d0-4b98-b56c-19ec4672d75a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gemm">
+      <UniqueIdentifier>{17647875-2b60-4d57-b1c5-e3576dc0a0c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GemmR">
+      <UniqueIdentifier>{36c8719b-791a-4b09-ba93-aee5c2eaeaff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GemmV2">
+      <UniqueIdentifier>{793db988-44fe-4d84-af0b-3890c24acc9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Winograd">
+      <UniqueIdentifier>{d48499b0-a03c-42e6-901c-3074914ed8f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Remode">
+      <UniqueIdentifier>{46a6b835-6733-48a2-9b6a-61b2d22d4bcf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

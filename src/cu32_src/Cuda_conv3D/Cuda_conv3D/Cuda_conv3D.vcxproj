@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7B1D62A-9330-4107-8C82-0D33DB562982}</ProjectGuid>
+    <RootNamespace>Cuda_conv3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.5.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Gilgamesh\Desktop\c-lib\java\include;C:\Users\Gilgamesh\Desktop\c-lib\java\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Gilgamesh\Desktop\c-lib\java\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Gilgamesh\Desktop\c-lib\java\include;C:\Users\Gilgamesh\Desktop\c-lib\java\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Gilgamesh\Desktop\c-lib\java\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+      <PtxAsOptionV>true</PtxAsOptionV>
+      <Optimization>InheritFromHost</Optimization>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+    <CudaCompile Include="vernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="conv3D.cuh" />
+    <ClInclude Include="conv3D_GemmR_A_kernel.cuh" />
+    <ClInclude Include="conv3D_GemmR_A_kernel_texture.cuh" />
+    <ClInclude Include="conv3D_GemmR_kernel_W1.cuh" />
+    <ClInclude Include="conv3D_GemmR_uernel.cuh" />
+    <ClInclude Include="conv3D_GemmV2R_kernel.cuh" />
+    <ClInclude Include="conv3D_GemmR_kernel.cuh" />
+    <ClInclude Include="conv3D_GemmR_kernel_EX.cuh" />
+    <ClInclude Include="conv3D_GemmR_kernel_EX2.cuh" />
+    <ClInclude Include="conv3D_GemmR_kernel_texture.cuh" />
+    <ClInclude Include="conv3D_GemmR_kernel_texture2.cuh" />
+    <ClInclude Include="conv3D_GemmV2R_kernel_EX.cuh" />
+    <ClInclude Include="conv3D_GemmV2R_uernel.cuh" />
+    <ClInclude Include="conv3D_GemmV2_kernel.cuh" />
+    <ClInclude Include="conv3D_Gemm_kernel.cuh" />
+    <ClInclude Include="conv3D_Gemm_kernel_EX2.cuh" />
+    <ClInclude Include="conv3D_Gemm_kernel_no_padding_EX.cuh" />
+    <ClInclude Include="conv3D_Gemm_kernel_texture.cuh" />
+    <ClInclude Include="conv3D_Gemm_kernel_no_padding.cuh" />
+    <ClInclude Include="conv3D_Gemm_kernel_texture2.cuh" />
+    <ClInclude Include="conv3D_Gemm_sernel.cuh" />
+    <ClInclude Include="conv3D_kernel_remode_V2.cuh" />
+    <ClInclude Include="conv3D_kernel_W1.cuh" />
+    <ClInclude Include="conv3D_kernel_remode.cuh" />
+    <ClInclude Include="conv3D_sernel_W1.cuh" />
+    <ClInclude Include="Memory.cuh" />
+    <ClInclude Include="Memory2.cuh" />
+    <ClInclude Include="U_X2.cuh" />
+    <ClInclude Include="texture.cuh" />
+    <ClInclude Include="Uconv3D_direct_kernel.cuh" />
+    <ClInclude Include="Uconv3D_kernel_V2.cuh" />
+    <ClInclude Include="Cuda_conv3D.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="conv3D_Gemm_kernel_EX.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="U_texture_gemm.cuh" />
+    <ClInclude Include="U_X1.cuh" />
+    <ClInclude Include="U_X3.cuh" />
+    <ClInclude Include="U_X4.cuh" />
+    <ClInclude Include="U_X5.cuh" />
+    <ClInclude Include="U_X6.cuh" />
+    <ClInclude Include="U_X7.cuh" />
+    <ClInclude Include="Winograd_X1.cuh" />
+    <ClInclude Include="Winograd_X2.cuh" />
+    <ClInclude Include="Winograd_X3.cuh" />
+    <ClInclude Include="Winograd_X4.cuh" />
+    <ClInclude Include="WinoGrad_X5.cuh" />
+    <ClInclude Include="U_X8.cuh" />
+    <ClInclude Include="U_X9.cuh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.5.targets" />
+  </ImportGroup>
+</Project>
