@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuda.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="Cuda_float.cuh">
+      <Filter>Cuda_float</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_float_set1D.cuh">
+      <Filter>Cuda_float</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_float_set1to2.cuh">
+      <Filter>Cuda_float</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_float_set2D.cuh">
+      <Filter>Cuda_float</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_float_set2to1.cuh">
+      <Filter>Cuda_float</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_float_set2to2.cuh">
+      <Filter>Cuda_float</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_int.cuh">
+      <Filter>Cuda_int</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_char.cuh">
+      <Filter>Cuda_int</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_Device.cuh">
+      <Filter>Cuda_buit_in</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_Event.cuh">
+      <Filter>Cuda_buit_in</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_Exception.cuh">
+      <Filter>Cuda_buit_in</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_memory.cuh">
+      <Filter>Cuda_buit_in</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuda_Stream.cuh">
+      <Filter>Cuda_buit_in</Filter>
+    </ClInclude>
+    <ClInclude Include="UX1.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="zero_pad.cuh">
+      <Filter>Zero_Pad</Filter>
+    </ClInclude>
+    <ClInclude Include="zero_pad_funcs_w3s4.cuh">
+      <Filter>Zero_Pad</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Cuda_float">
+      <UniqueIdentifier>{4edd573e-1cfd-450f-a74d-4af4dc4a2242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda_int">
+      <UniqueIdentifier>{a212f954-c2f4-4ef0-8f7b-b363fc9984c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda_buit_in">
+      <UniqueIdentifier>{9f34abce-c2a0-4b5d-b642-7518e0d47677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xeno">
+      <UniqueIdentifier>{915e2507-7fbb-49ff-89b9-f55cc9b8eac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zero_Pad">
+      <UniqueIdentifier>{5eee4b7c-42dd-4dca-af16-626f76628b7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
