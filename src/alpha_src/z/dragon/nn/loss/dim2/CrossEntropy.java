@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package z.dragon.nn.loss.dim2;
+
+import z.dragon.engine.Engine;
+import z.dragon.engine.Tensor;
+import z.util.lang.annotation.Passed;
+
+/**
+ *
+ * @author Gilgamesh
+ */
+@Passed("CudaFloat32Base")
+public class CrossEntropy extends Loss2D
+{
+    //<editor-fold defaultstate="collapsed" desc="running-area">
+    @Override
+    protected Tensor __loss_tensor__(Tensor Yh, Tensor Y, Engine eg) {
+        return eg.crossEntropy(Yh, Y);
+    }
+    
+    @Override
+    protected Tensor __gradient__(Tensor Yh, Tensor Y, Engine eg) {
+        return eg.crossEntropy_deltaYh(Yh, Y);
+    }
+    //</editor-fold>
+}
