@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="A.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuda_function.cuh" />
+    <ClInclude Include="frame.cuh" />
+    <ClInclude Include="Afunction.cuh" />
+    <ClInclude Include="JNITool.cuh" />
+    <ClInclude Include="micro.cuh" />
+    <ClInclude Include="test.cuh" />
+    <ClInclude Include="distance_binaryCrossEntropy2D.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_binaryCrossEntropy2D_deltaYh.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_crossEntropy2D.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_crossEntropy2D_deltaYh.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_L1_2D.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_L1_2D_deltaYh.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_L2_2D.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_L2_2D_deltaYh.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_sigmoid_binaryCrossEntropy2D.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_sigmoid_binaryCrossEntropy2D_deltaX.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_smoothL1_2D.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_smoothL1_2D_deltaYh.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_softmax_crossEntropy2D.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="distance_softmax_crossEntropy2D_deltaX.cuh">
+      <Filter>distance</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adam2D.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adam2D_decay.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adam2D_type2.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adamax2D.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adamax2D_decay.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adamod2D.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adamod2D_decay.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_adamW2D.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_momentum2D.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_momentum2D_decay.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_rmsprop2D.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_rmsprop2D_decay.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_affine2D_row.cuh">
+      <Filter>extra</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_onehot2D_row_char.cuh">
+      <Filter>extra</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_onehot2D_row_int.cuh">
+      <Filter>extra</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_pix2tensor2D.cuh">
+      <Filter>extra</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_add_div2D_field.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_add_div2D_row.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_div2D.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_div2D_deltaX.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_div2D_field.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_div2D_row.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_equal_abs2D.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_equal_abs2D_char.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_equal_abs2D_int.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_rpl2D.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_rpl2D_deltaX.cuh">
+      <Filter>type1_basic</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_abs2D.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_abs2D_deltaX.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_ceil2D.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_floor2D.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_sign2D.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_sqrt_quadratic_dual2D.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_sqrt2D.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type2_zero_nan2D.cuh">
+      <Filter>type2_simple</Filter>
+    </ClInclude>
+    <ClInclude Include="type3_clip2D.cuh">
+      <Filter>type3_clip</Filter>
+    </ClInclude>
+    <ClInclude Include="type3_max_dual2D.cuh">
+      <Filter>type3_clip</Filter>
+    </ClInclude>
+    <ClInclude Include="type3_max2D.cuh">
+      <Filter>type3_clip</Filter>
+    </ClInclude>
+    <ClInclude Include="type3_min_dual2D.cuh">
+      <Filter>type3_clip</Filter>
+    </ClInclude>
+    <ClInclude Include="type3_min2D.cuh">
+      <Filter>type3_clip</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_elu2D.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_gelu2D.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_gelu2D_deltaX.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_leakyRelu2D.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_relu2D.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_softplus2D.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_exp2D.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_log2D.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_log2D_deltaX.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_logsoftmax2D.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_logsoftmax2D_deltaX.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_sigmoid2D.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_softmax2D_deltaX.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_tanh2D.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_arcsin2D.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_arcsin2D_deltaX.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_arctan2D.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_arctan2D_deltaX.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_halfsin2D.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_halfsin2D_deltaX.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_sin2D.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_sin2D_deltaX.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_tan2D.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type6_tan2D_deltaX.cuh">
+      <Filter>type6_sin</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_relu2D_deltaX_v2.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_relu2D_deltaX_v1.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_leakyRelu2D_deltaX_v1.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_leakyRelu2D_deltaX_v2.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_elu2D_deltaX_v1.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_elu2D_deltaX_v2.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_softplus2D_deltaX_v1.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type4_softplus2D_deltaX_v2.cuh">
+      <Filter>type4_relu</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_sigmoid2D_deltaX_v1.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_sigmoid2D_deltaX_v2.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_tanh2D_deltaX_v1.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type5_tanh2D_deltaX_v2.cuh">
+      <Filter>type5_exp</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear_dual_out2D.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear_dual2D.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear_dual2D_field.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear_dual2D_row.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear_greater_dual2D.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear_greater2D.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear2D.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear2D_char2float.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear2D_float2char.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear2D_float2int.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_linear2D_int2float.cuh">
+      <Filter>type1_linear</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_quadratic_dual2D.cuh">
+      <Filter>type1_quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_quadratic_dual2D_deltaX.cuh">
+      <Filter>type1_quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_quadratic_dual2D_field.cuh">
+      <Filter>type1_quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_quadratic_dual2D_row.cuh">
+      <Filter>type1_quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_quadratic2D.cuh">
+      <Filter>type1_quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_quadratic2D_deltaX.cuh">
+      <Filter>type1_quadratic</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_layernorm_affined2D_row.cuh">
+      <Filter>extra_layernorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_layernorm_affined2D_row_deltaX_v1.cuh">
+      <Filter>extra_layernorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_layernorm_affined2D_row_deltaX_v2.cuh">
+      <Filter>extra_layernorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_layernorm2D_row.cuh">
+      <Filter>extra_layernorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_layernorm2D_row_deltaX_v1.cuh">
+      <Filter>extra_layernorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_layernorm2D_row_deltaX_v2.cuh">
+      <Filter>extra_layernorm</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_sgdmn2D.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizer_sgdmn2D_decay.cuh">
+      <Filter>extra_optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_sqBatchNorm_affined2D_row_deltaX_v2.cuh">
+      <Filter>extra_sqBatchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_sqBatchnorm2D_row.cuh">
+      <Filter>extra_sqBatchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_sqBatchNorm2D_row_deltaX_v1.cuh">
+      <Filter>extra_sqBatchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_sqBatchNorm2D_row_deltaX_v2.cuh">
+      <Filter>extra_sqBatchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_sqBatchNorm_affined2D_row_deltaX_v1.cuh">
+      <Filter>extra_sqBatchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_sqBatchNorm_affined2D_row.cuh">
+      <Filter>extra_sqBatchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_batchNorm2D_row.cuh">
+      <Filter>extra_batchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_batchNorm_affined2D_row.cuh">
+      <Filter>extra_batchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_batchNorm_affined2D_row_deltaX_v1.cuh">
+      <Filter>extra_batchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_batchNorm_affined2D_row_deltaX_v2.cuh">
+      <Filter>extra_batchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_batchNorm2D_row_deltaX_v1.cuh">
+      <Filter>extra_batchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="extra_batchNorm2D_row_deltaX_v2.cuh">
+      <Filter>extra_batchNorm</Filter>
+    </ClInclude>
+    <ClInclude Include="type1_variance2D_f64.cuh">
+      <Filter>type1_quadratic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="distance">
+      <UniqueIdentifier>{6ddbd756-3a89-4d50-bb7e-e1a5998929e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra">
+      <UniqueIdentifier>{94a07306-aa91-4ea9-a18e-a8006ee66e07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type1_basic">
+      <UniqueIdentifier>{8a57077b-febd-4ecb-9a25-33eff7245c8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type2_simple">
+      <UniqueIdentifier>{24c575d9-c8e6-4f18-a08f-747990214ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type3_clip">
+      <UniqueIdentifier>{b60424dd-6ef9-44d2-be5e-30ec01cc6f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type4_relu">
+      <UniqueIdentifier>{411551f7-3e05-4695-bf94-c4a41b2a0e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type6_sin">
+      <UniqueIdentifier>{465f7007-f2bd-4c3f-9f53-4561a35d7076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type5_exp">
+      <UniqueIdentifier>{fd8467e1-b5ca-490e-8979-a2c2863e4497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type1_linear">
+      <UniqueIdentifier>{a2437392-762a-415f-b719-45dced5d1714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="type1_quadratic">
+      <UniqueIdentifier>{4c5da169-dcbb-4523-aa3b-24fdeff98601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra_layernorm">
+      <UniqueIdentifier>{6b2b35c0-2ff3-4516-855f-ebee379ab58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra_optimizer">
+      <UniqueIdentifier>{c427a7a4-b605-4b18-8d8e-588e0dac9ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra_sqBatchNorm">
+      <UniqueIdentifier>{97964258-1813-41ad-abf1-c4bc0c1a6f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra_batchNorm">
+      <UniqueIdentifier>{b9c1fb0b-ffee-4eaf-ac22-0d9ac74a271d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
