@@ -7,7 +7,7 @@ I usually abbreviate Dragon-Alpha as Alpha.
 **3.** Please make sure: compute >= 61, sm >= 61<br>
 **4.** Kindly read “Arxiv.pdf” first, to briefly understand Alpha.<br>
 **5.** Alpha has only been executed on GTX 1050, RTX 3060ti GPU, and presently its applications can only be executed on CUDA GPU.<br>
-**6.** Since I am the only-one programmer to build Alpha, I must pay my main attention on the code instead of the document, to complete<br> Alpha’s prototype in time. If you have some question, just see the source-code. Sorry, my personal abilities are really limited.<br> 
+**6.** Since I am the only-one programmer to build Alpha, I must pay my main attention to the code instead of the document, to complete Alpha’s prototype in time. If you have some questions, just see the source-code. Sorry, my personal abilities are really limited.<br> 
 
 
 # II. Files
@@ -34,7 +34,7 @@ I usually abbreviate Dragon-Alpha as Alpha.
 - My name Zhang Zhiyi, and I often use Gilgamesh as my internet name.<br>
 - I was born in April, 2000, majored Computer-Science in my college, and now study Pattern-Recognition after graduate.<br>
 - First, let’s talk about the reason why I create Alpha instead of using PyTorch. I prefer Java to Python, but failed to find a Java-based DL framework as excellent as PyTorch, in the past few years. Also, I want to learn more about the principles and details of DL, and like implementing them to improve my abilities. So, I started to build my own Java DL framework. Dragon-Alpha can be regraded as a continuation of Dragon, which is my graduation project.<br>
-- It took me about 190 days and 200,000 lines of code to build Alpha’s prototype. In such progress, I have been suffering while enjoying, and finally benefited a lot.<br> PyTorch&cuDNN is my opponent but also my mentor. I tried to learn its advantage, and pondered how to make some breakthrough while keeping Alpha’s own characteristics. Now, the Alpha’s prototype has been completed, and the relative paper has been written.<br>
+- It took me about 190 days and 200,000 lines of code to build Alpha’s prototype. In such progress, I have been suffering while enjoying, and finally benefited a lot. PyTorch&cuDNN is my opponent but also my mentor. I tried to learn its advantage, and pondered how to make some breakthrough while keeping Alpha’s own characteristics. Now, the Alpha’s prototype has been completed, and the relative paper has been written.<br>
 At present, Alpha is not as polished as PyTorch, but it could be good start and have a long way to reach perfection. I am grateful to all those who provided me with support and encouragement.<br>
 - It’s my honour to share the source code Alpha&cu32. Sincerely, I request and need all of you to use and improve it. If you have some related good advice and achievement, please contact me at gilgamesh@mail.ustc.edu.cn.<br>
 
