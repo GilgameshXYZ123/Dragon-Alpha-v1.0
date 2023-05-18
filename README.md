@@ -30,7 +30,7 @@ I usually abbreviate Dragon-Alpha as Alpha.
   - **test_cuda**  some related code to test Alpha&cu32. You can take it as examples of using Alpha’s operators.<br>
 
 
-# Finally, 
+# About me
 - My name Zhang Zhiyi, and I often use Gilgamesh as my internet name.<br>
 - I was born in April, 2000, majored Computer-Science in my college, and now study Pattern-Recognition after graduate.<br>
 - First, let’s talk about the reason why I create Alpha instead of using PyTorch. I prefer Java to Python, but failed to find a Java-based DL framework as excellent as PyTorch, in the past few years. Also, I want to learn more about the principles and details of DL, and like implementing them to improve my abilities. So, I started to build my own Java DL framework. Dragon-Alpha can be regraded as a continuation of Dragon, which is my graduation project.<br>
