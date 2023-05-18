@@ -13,7 +13,7 @@ I usually abbreviate Dragon-Alpha as Alpha.
 # II. Files
 - **Arxiv.pdf**  an article talking about the background, characteristics, architecture and experiments of Alpha, preprinted on arxiv.org, at: https://arxiv.org/abs/2305.08819.<br>
 - **exec**  the executable files of Alpha.
-  - **lib**  Java libraries of Alpha, which are jar-files complied by Java-code.<br>
+  - **lib**  Java libraries of Alpha, which are jar-files complied by Java-code. Obviously, you need to add such jar files to your projects.<br>
   - **native-lib**  native libraries of Dragon-Alpha. They are dynamic-linked-libraries, and integrated to Alpha at the bottom through JNI.<br>
     - **cuda_float32**  contains the executable files of cu32. Presently, cu32 has only been complied for 64-bit Windows, and will be compiled for Linux in the near future<br>
   - **icon**  Alpha’s logo. If you like it, set it for Alpha’s home directory. <br> 
