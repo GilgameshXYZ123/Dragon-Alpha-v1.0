@@ -1,3 +1,6 @@
+### THis is an old version, please go to Dragon-Alpha-v1.2!!!
+
+
 Thank you for downing Dragon-Alpha&cu32. 
 I usually abbreviate Dragon-Alpha as Alpha.
 
