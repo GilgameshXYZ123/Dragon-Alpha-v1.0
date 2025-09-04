@@ -1,4 +1,4 @@
-### This is an old version, please go to Dragon-Alpha-v1.2!!!
+### This is an old version, please go to see Dragon-Alpha-v1.3 in my Repositories!!!
 
 
 Thank you for visiting my Github.
